@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Home from './pages/Home';
 import CityList from './pages/CityList';
+import Map from './pages/Map';
 
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
             {/* 配置路由 */}
             <Route path="/home" component={Home}></Route>
             <Route path="/citylist" component={CityList}></Route>
+            <Route path="/map" component={Map}/>
         </div>
     </Router>
 )
